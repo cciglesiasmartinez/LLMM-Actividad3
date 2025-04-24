@@ -1,0 +1,125 @@
+/* Theme variables */
+:root {
+    /* Theme colors */
+    --background: white;
+    --primary: black;
+    --secondary: gray;
+    --highlight: red;
+    /* Theme fonts */
+    --header-font: Serif ;
+    --paragraph-font: Helvetica ;
+    /* More stuff */
+}
+
+/* Normalizer */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    justify-content: space-between;
+    
+}
+
+/* Body */
+.body {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.carrousel {
+    display: flex;
+    width: 1005;
+    justify-content: center;
+}
+
+.index-container {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.right-section {
+    display: flex;
+    width: 20%;
+}
+
+.left-section {
+    display: flex;
+    width: 20%;
+}
+
+.center-section {
+    display: flex;
+    width: 60%;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.left-footer {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.right-footer {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+/* Breakpoints */
+
+/* Portrait, mobile and tablet */
+@media (orientation: portrait) {
+    /* Mobile */
+    .footer {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .left-footer {
+        width: 60%;
+        justify-content: center;
+    }
+    .right-footer{
+        width: 60%;
+        justify-content: center;
+    }
+    .left-section {
+        display: none;
+    }
+    .right-section {
+        display: none;
+    }
+    .center-section {
+        width: 100%;
+    }
+    @media (min-width: 600px) {
+        /* Tablet */
+    }
+}
+  
+/* Landscape, desktop big and small */
+@media (orientation: landscape) {
+    /* Small desktops or landscaped tablets */
+    @media (max-width: 1370px) {
+        /* Big desktops */
+    }
+}
+  
