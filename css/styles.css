@@ -82,6 +82,49 @@
     justify-content: center;
 }
 
+/*Blog Page*/
+.headArti{
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 50px 20px 10px;
+}
+.headArti h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.headArti p{
+    margin-bottom: 5px;
+}
+.article{
+    border: 2px outset red;
+    margin: 50px 20px 10px;
+    float: left;
+}
+.article h4{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.article2{
+    border: 2px outset red;
+    margin: 50px 20px 10px;
+    float: right;
+}
+.article2 h4{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.bottomArti{
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 50px 50px 10px;
+}
+.bottomArti h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
 /* Breakpoints */
 
 /* Portrait, mobile and tablet */
