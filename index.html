@@ -4,29 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="icon" type="image/png" href="img/logo-colorido.png">
+    <title>IT Consultancy - Services for professionals</title>
 </head>
 <body>
     <div class="header">
-        <div class="logo">Logo</div>
-        <div class="menu">Menu</div>
-        <div class="options">Opciones</div>
+
+        <!-- Logo section -->
+        <div class="logo">
+            <div class="header-logo-container">
+                <img class="header-logo-img" src="img/logo-colorido.png">
+            </div>
+            <div class="header-logo-text">
+                <span class="header-logo-span">
+                    IT Consultancy
+                </span>
+                <span class="header-logo-motto">
+                    Services for professionals
+                </span>
+            </div>
+        </div>
+
+        <!-- Menu section -->
+        <div class="menu">
+            <ul class="menu-list">
+                <li>
+                    Services
+                </li>
+                <li>
+                    Blog
+                </li>
+                <li>
+                    Contact us
+                </li>
+            </ul>
+            <!-- Options section -->
+            <!--
+            <div class="options">
+                <div class="language-selector">
+                    <img id="en-lang-icon" src="img/en-flag-ready.png">
+                    <img id="es-lang-icon" src="img/es-flag-ready.png">
+                </div>
+            </div>
+            -->
+        </div>
+
+
+
     </div>
     <div class="body">
+        
         <!-- Carrousel is going to be 100% width -->
-        <div class="carrousel">
-            Esto va a ser el carrusel
+        <div class="carousel-container">
+
+            <div class="carousel">
+
+                <div class="slides">
+                    
+                    <div class="slide">
+                        <div class="slide-over">
+                            <div class="left-section"></div>
+                            <div class="center-section">
+                                <h2>Some text here</h2>
+                                <span>Here goes some text :)</span>
+                            </div>
+                            <div class="right-section"></div>
+  
+                        </div>
+                        <img src="https://picsum.photos/1280/720?random=1" alt="slide image" class="slide">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-over">
+                            <div class="left-section"></div>
+                            <div class="center-section">
+                                <h2>Some text here</h2>
+                                <span>Here goes some text :)</span>
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/1280/720?random=2" alt="slide image" class="slide">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-over">
+                            <div class="left-section"></div>
+                            <div class="center-section">
+                                <h2>Some text here</h2>
+                                <span>Here goes some text :)</span>
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/1280/720?random=3" alt="slide image" class="slide">
+                    </div>
+
+                </div>
+
+                <div class="controls">
+                  <div class="control prev-slide">&#9668;</div>
+                  <div class="control next-slide">&#9658;</div>
+                </div>
+            
+                <div>
+
+                </div>
+            
+            </div>
+
+                
+
         </div> 
+
         <!-- Rest of stuff is going to be in the middle third of the screen -->
         <div class="index-container">
+
             <div class="left-section">
                 <!-- This is going to be empty -->
             </div>
+
+            <!-- Center section -->
             <div class="center-section">
-                <div class="faq">
-                    Esto va a ser el FAQ.
+
+                <!-- Mission 
+                <div class="mission">
+                    <h2>We are awesome IT professionals</h2>
+                    <p>Do you need computer's people? Call us! We are the best at it. Everybody was dancing and having fun at the disco, guess who was in their basements at home fiddling with machines?</p>
                 </div>
+                -->
+
+                <!-- Testimonials -->
+
+                <div class="testimonials">
+                    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+                    <h2>What our clients say about us</h2>
+                    <div class="card-wrapper">
+                        <main id="card">
+                            <div id="card-controls">
+                                <ion-icon id="control-left" class="icon icon-control-left" name="chevron-back-outline"></ion-icon>
+                                <ion-icon id="control-right" class="icon icon-control-right" name="chevron-forward-outline"></ion-icon>
+                            </div>
+                            <header class="card-header">
+                                <h1 id="card-name"></h1>
+                                <h3 id="card-job-title"></h3>
+                            </header>
+                            <hr>
+                            <section class="card-body">
+                                <div class="card-img-sec">
+                                    <img id="card-img" class="card-img" src="" alt="">
+                                </div>
+                                <div class="card-info-sec">
+                                        <h4 id="card-text" class="card-text">
+                                        </h4>
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+
+
+                <!-- FAQ -->
+                <div class="faq">
+                    <h2>Need to know more?</h2>
+                    <div class="accordion-item">
+                        <div class="accordion-tab-container">
+                            <div class="accordion-caret-container">
+                                <span class="accordion-caret">></span>
+                            </div>
+                            <h2>Do we outsource?</h2>
+                        </div>
+                        <div class="accordion-item display">
+                          <p>No, we do not outsource any part of our development process. All work is done internally by our skilled team to maintain full control over quality, security, and communication. This approach ensures that we can be agile, responsive, and closely aligned with our clients throughout every stage of the project.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-tab-container">
+                          <div class="accordion-caret-container">
+                            <span class="accordion-caret">></span>
+                          </div>
+                          <h2>Do we offer closed budgets?</h2>
+                        </div>
+                        <div class="accordion-item display">
+                          <p>Yes, we offer closed budgets for projects with a clearly defined scope and requirements. This allows clients to know exactly what they are paying for from the beginning, with no unexpected costs. We carefully assess the needs of each project to provide accurate, transparent, and fair pricing.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-tab-container">
+                          <div class="accordion-caret-container">
+                            <span class="accordion-caret">></span>
+                          </div>
+                          <h2>How long does it take to start working on a project?</h2>
+                        </div>
+                        <div class="accordion-item display">
+                          <p>Once a project is approved and the requirements are confirmed, we can usually begin within a few business days. Our onboarding process is efficient, and we prioritize early alignment to ensure a smooth start. Availability may vary slightly depending on our current project load, but we strive to begin as quickly as possible.</p>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+
             <div class="right-section">
                 <!-- This is going to be empty -->
             </div>
@@ -39,6 +216,10 @@
         <div class="right-footer">
             Contacto
         </div>
+        <!-- Scripts -->
+        <script src="js/carousel.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/testimonials.js"></script>
     </div>
 </body>
 </html>
