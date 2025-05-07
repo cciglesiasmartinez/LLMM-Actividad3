@@ -99,10 +99,16 @@ p, h2, h1 {
     list-style: none;
     padding: 1rem 0;
     align-items: center;
+    font-size: 1.25rem;
 }
 
 .menu-list > li {
     padding: 0rem 1rem;
+}
+
+.header a {
+    color: #212529;
+    text-decoration: none;
 }
 
 /* Body */
