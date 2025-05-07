@@ -15,15 +15,94 @@
 * {
     margin: 0;
     padding: 0;
+    /*border: 1px dotted red;*/
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+p, h2, h1 {
+    color: #212529;
 }
 
 /* Header */
+.logo {
+    display: flex;
+    flex-flow: row;
+    
+}
+
+.header-logo-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}   
+
+.header-logo-span {
+    font-weight: bold;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+}
+
+.header-logo-motto {
+    font-size: 0.75rem;
+}
+
 .header {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     flex-flow: row;
     justify-content: space-between;
-    
+    padding: 0 3rem;
+}
+
+.header-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo-img {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+}
+
+.language-selector {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.language-selector > img {
+  width: 2rem;
+  height: 2rem;
+  padding: 0rem 1rem;  
+}
+
+.menu {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.options {
+    width: 20%;
+}
+
+.menu-list {
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+.menu-list > li {
+    padding: 0rem 1rem;
 }
 
 /* Body */
@@ -34,12 +113,14 @@
     justify-content: space-around;
 }
 
-.carrousel {
+.carousel-container {
     display: flex;
     width: 1005;
     justify-content: center;
 }
 
+
+/* Body 3 sections */
 .index-container {
     display: flex;
     width: 100%;
@@ -60,6 +141,18 @@
 .center-section {
     display: flex;
     width: 60%;
+    flex-flow: column;
+}
+
+/* Mission section */
+.mission {
+    padding: 2rem 0rem;
+}
+
+.mission > h2 {
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 3rem;
 }
 
 /* Footer */
@@ -68,6 +161,11 @@
     width: 100%;
     flex-flow: row;
     justify-content: center;
+    height: 20vw;
+    border-top: 1px solid black;
+    align-items: center;
+    background-color: #212529;
+    color: white;
 }
 
 .left-footer {
@@ -80,6 +178,15 @@
     display: flex;
     width: 30%;
     justify-content: center;
+}
+
+/* FAQ */
+.faq {
+    padding: 2rem 0 4rem 0;
+}
+
+.faq > h2 {
+    font-size: 4rem;
 }
 
 /* Breakpoints */
