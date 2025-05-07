@@ -1,0 +1,74 @@
+.icon {
+	font-size: 2rem;
+	background-color: black;
+	color: white;
+	padding: 0.5rem;
+    border-radius: 3rem;
+}
+
+#card {
+	padding: 2rem 3rem;
+	border-radius: 2rem;
+	position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#card-controls {
+	position: absolute;
+	bottom: 50%;
+	transform: translateY(50);
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon-control-left,
+.icon-control-right {
+	cursor: pointer;
+	margin: 0 -1rem;
+}
+
+.card-header {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.card-body {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-img {
+	max-height: 100%;
+	border: 0.2rem solid #020805;
+    border-radius: 5rem;
+}
+
+.card-info-sec {
+	padding: 0 1rem;
+}
+
+.card-wrapper {
+    padding: 2rem 0;
+}
+
+.testimonials {
+    padding: 4rem 0 2rem 0;
+}
+
+.testimonials > h2 {
+    font-size: 4rem;
+}
+
+#card-job-title {
+    color: #363636;
+    font-weight: 100;
+}
+
+#card-text {
+    font-size: 1.25rem;
+    font-weight: 100;
+}
