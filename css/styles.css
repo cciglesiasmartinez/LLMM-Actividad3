@@ -203,23 +203,85 @@ p, h2, h1 {
 .headArti p{
     margin-bottom: 5px;
 }
+.headArti a{
+    background-color: darkblue;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    padding: 2px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 800px;
+}
+
+.headArti a:hover{
+    background-color: darkgray;
+    color: darkblue;
+    transition: 0.5s;
+}
+
 .article{
     border: 2px outset red;
     margin: 50px 20px 10px;
+    padding: 5px;
     float: left;
+    background-color: rgba( 153, 153, 153, 0.3);
 }
 .article h4{
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
+.article a{
+    background-color: darkblue;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    padding: 2px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 800px;
+}
+.article a:hover{
+    background-color: darkgray;
+    color: darkblue;
+    transition: 0.5s;
+}
+
+.article p{
+    margin-bottom: 15px;
+}
+
 .article2{
     border: 2px outset red;
     margin: 50px 20px 10px;
+    padding: 10px;
     float: right;
+    background-color: rgba( 153, 153, 153, 0.3);
+}
+.article2 a{
+    background-color: darkorchid;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 800px;
+}
+.article2 a:hover{
+    background-color: black;
+    color: darkorchid;
+    transition: 0.5s;
 }
 .article2 h4{
     text-align: center;
     margin-bottom: 5px;
+}
+.article2 p{
+    margin-bottom: 15px;
 }
 
 .bottomArti{
@@ -231,6 +293,43 @@ p, h2, h1 {
 .bottomArti h3{
     text-align: center;
     margin-bottom: 5px;
+}
+.bottomArti a{
+    background-color: darkorchid;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 800px;
+}
+.bottomArti a:hover{
+    background-color: black;
+    color: darkorchid;
+    transition: 0.5s;
+}
+.bottomArti p {
+    margin-bottom: 15px;
+}
+
+.body h6{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.artiImg{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 350px;
+    display: block;
+    margin-bottom: 10px;
+}
+.artiImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
 }
 
 /* Breakpoints */
