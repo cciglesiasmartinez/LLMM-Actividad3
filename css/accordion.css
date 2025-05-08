@@ -55,6 +55,8 @@
     max-height: 0px;
     transition: max-height 0.3s ease;
     overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
   
 .accordion-item.active .display {
