@@ -5,16 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="icon" type="image/png" href="img/logo-colorido.png">
     <title>Blog</title>
 </head>
 
 <body>
     <div class="header">
-        <div class="logo">Logo</div>
-        <div class="menu">Menu</div>
-        <div class="options">Opciones</div>
+        <div class="logo">
+            <div class="header-logo-container">
+                <img class="header-logo-img" src="img/logo-colorido.png">
+            </div>
+            <div class="header-logo-text">
+                <span class="header-logo-span">
+                    <a href="index.html">IT Consultancy</a>
+                </span>
+                <span class="header-logo-motto">
+                    Services for professionals
+                </span>
+            </div>
+        </div>
+        
+        <div class="menu">
+            <ul class="menu-list">
+                <li>
+                    Services
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    Contact us
+                </li>
+            </ul>
+            <!-- Options section -->
+            <!--
+            <div class="options">
+                <div class="language-selector">
+                    <img id="en-lang-icon" src="img/en-flag-ready.png">
+                    <img id="es-lang-icon" src="img/es-flag-ready.png">
+                </div>
+            </div>
+            -->
+        </div>
     </div>
     <div class="body">
+        <div class="carousel-container">
+
+            <div class="carousel">
+
+                <div class="slides">
+                    
+                    <div class="slide">
+                        <div class="slide-over">
+                            <div class="left-section"></div>
+                            <div class="center-section">
+                                <h2>Welcome to our Blog page!</h2>
+                                <span>Catch all the latest tech news here, from reputable sources!</span>
+                            </div>
+                            <div class="right-section"></div>
+  
+                        </div>
+                        <img src="https://picsum.photos/1280/720?random=1" alt="slide image" class="slide">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-over">
+                            <div class="left-section"></div>
+                            <div class="center-section">
+                                <h2>Welcome to our Blog page!</h2>
+                                <span>The latest tech news, all on one page!</span>
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/1280/720?random=2" alt="slide image" class="slide">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-over">
+                            <div class="left-section"></div>
+                            <div class="center-section">
+                                <h2>Welcome to our Blog page!</h2>
+                                <span>Watch as the tech world evolves!</span>
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/1280/720?random=3" alt="slide image" class="slide">
+                    </div>
+
+                </div>
+
+                <div class="controls">
+                  <div class="control prev-slide">&#9668;</div>
+                  <div class="control next-slide">&#9658;</div>
+                </div>
+            
+                <div>
+
+                </div>
+            
+            </div>
+
+                
+
+        </div> 
         <!--This section would be for blog content-->
         <div class="headArti">
             <h2>Apple's plan to offer AI search options on Safari a blow to Google dominance</h2>
@@ -256,6 +348,7 @@
         <div class="right-footer">
             Contacto
         </div>
+        <script src="js/carousel.js"></script>
     </div>
 </body>
 

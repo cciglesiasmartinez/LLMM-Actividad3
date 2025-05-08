@@ -105,6 +105,11 @@ p, h2, h1 {
     padding: 0rem 1rem;
 }
 
+.menu-list a{
+    text-decoration: none;
+    color: black;
+}
+
 /* Body */
 .body {
     display: flex;
@@ -190,6 +195,11 @@ p, h2, h1 {
 }
 
 /*Blog Page*/
+.header-logo-span a{
+    text-decoration: none;
+    color: black;
+}
+
 .headArti{
     border: 5px solid black;
     border-radius: 10px;
@@ -225,7 +235,6 @@ p, h2, h1 {
     border: 2px outset red;
     margin: 50px 20px 10px;
     padding: 5px;
-    float: left;
     background-color: rgba( 153, 153, 153, 0.3);
 }
 .article h4{
@@ -257,7 +266,6 @@ p, h2, h1 {
     border: 2px outset red;
     margin: 50px 20px 10px;
     padding: 10px;
-    float: right;
     background-color: rgba( 153, 153, 153, 0.3);
 }
 .article2 a{
