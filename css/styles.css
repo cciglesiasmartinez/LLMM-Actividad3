@@ -242,6 +242,12 @@ h2, h1, h3 {
 }
 
 /*Blog Page*/
+.portada-blog{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
 .blogGrid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -255,10 +261,9 @@ h2, h1, h3 {
 }
 
 .headArti{
-    border: 5px solid black;
-    border-radius: 10px;
+    background-color: white;
     padding: 5px;
-    margin: 50px 20px 10px;
+    margin-top: -15rem;
 }
 .headArti h2{
     text-align: center;
@@ -276,12 +281,6 @@ h2, h1, h3 {
     padding: 2px;
     margin-top: 25px;
     margin-bottom: 50px;
-}
-
-.headArti a:hover{
-    background-color: darkgray;
-    color: darkblue;
-    transition: 0.5s;
 }
 
 .article{
@@ -389,7 +388,6 @@ h2, h1, h3 {
 .artiImg img{
     width: 100%;
     height: 100%;
-    border-radius: 25px;
 }
 
 /* Our company */
@@ -527,16 +525,29 @@ h2, h1, h3 {
     .center-section {
         width: 100%;
     }
+    .blogGrid{
+        display: flex;
+        flex-flow: column;
+    }
     @media (min-width: 600px) {
         /* Tablet */
+        .blogGrid{
+            display: flex;
+            flex-flow: column;
+        }
     }
 }
   
 /* Landscape, desktop big and small */
 @media (orientation: landscape) {
     /* Small desktops or landscaped tablets */
+    
     @media (max-width: 1370px) {
         /* Big desktops */
+        .blogGrid{
+            display: flex;
+            flex-flow: column;
+        }
     }
 }
   
