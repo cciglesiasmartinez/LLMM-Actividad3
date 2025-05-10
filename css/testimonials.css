@@ -10,12 +10,17 @@
 	padding: 2rem 3rem;
 	border-radius: 2rem;
 	position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+	justify-content: center;
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+	align-items: center;
 }
 
 #card-controls {
 	position: absolute;
-	bottom: 50%;
+	bottom: 54.5%;
 	transform: translateY(50);
 	left: 0;
 	width: 100%;
@@ -60,7 +65,8 @@
 }
 
 .testimonials > h2 {
-    font-size: 4rem;
+    font-size: 3rem;
+	padding-bottom: 1rem;
 }
 
 #card-job-title {
@@ -71,4 +77,8 @@
 #card-text {
     font-size: 1.25rem;
     font-weight: 100;
+}
+
+#card hr {
+    width: 90%;
 }
