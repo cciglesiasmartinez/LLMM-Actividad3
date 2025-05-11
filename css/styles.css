@@ -706,6 +706,7 @@ h2, h1, h3 {
         font-size: 1.5rem;
     }
 }
+
 /* Landscape, desktop big and small */
 @media (orientation: landscape) {
     /* Small desktops or landscaped tablets */
@@ -718,3 +719,5 @@ h2, h1, h3 {
         }
     }
 }
+
+
