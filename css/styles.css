@@ -242,11 +242,28 @@ h2, h1, h3 {
 }
 
 /*Blog Page*/
+.portada-blog{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.blogGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.header-logo-span a{
+    text-decoration: none;
+    color: black;
+}
+
 .headArti{
-    border: 5px solid black;
-    border-radius: 10px;
+    background-color: white;
     padding: 5px;
-    margin: 50px 20px 10px;
+    margin-top: -15rem;
 }
 .headArti h2{
     text-align: center;
@@ -255,23 +272,75 @@ h2, h1, h3 {
 .headArti p{
     margin-bottom: 5px;
 }
+.headArti a{
+    background-color: darkblue;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    padding: 2px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
 .article{
     border: 2px outset red;
     margin: 50px 20px 10px;
-    float: left;
+    padding: 5px;
+    background-color: rgba( 153, 153, 153, 0.3);
 }
 .article h4{
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
+.article a{
+    background-color: darkblue;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    padding: 2px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 800px;
+}
+.article a:hover{
+    background-color: darkgray;
+    color: darkblue;
+    transition: 0.5s;
+}
+
+.article p{
+    margin-bottom: 15px;
+}
+
 .article2{
     border: 2px outset red;
     margin: 50px 20px 10px;
-    float: right;
+    padding: 10px;
+    background-color: rgba( 153, 153, 153, 0.3);
+}
+.article2 a{
+    background-color: darkorchid;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.article2 a:hover{
+    background-color: black;
+    color: darkorchid;
+    transition: 0.5s;
 }
 .article2 h4{
     text-align: center;
     margin-bottom: 5px;
+}
+.article2 p{
+    margin-bottom: 15px;
 }
 
 .bottomArti{
@@ -283,6 +352,42 @@ h2, h1, h3 {
 .bottomArti h3{
     text-align: center;
     margin-bottom: 5px;
+}
+.bottomArti a{
+    background-color: darkorchid;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 800px;
+}
+.bottomArti a:hover{
+    background-color: black;
+    color: darkorchid;
+    transition: 0.5s;
+}
+.bottomArti p {
+    margin-bottom: 15px;
+}
+
+.body h6{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.artiImg{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 350px;
+    display: block;
+    margin-bottom: 10px;
+}
+.artiImg img{
+    width: 100%;
+    height: 100%;
 }
 
 /* Our company */
@@ -420,16 +525,29 @@ h2, h1, h3 {
     .center-section {
         width: 100%;
     }
+    .blogGrid{
+        display: flex;
+        flex-flow: column;
+    }
     @media (min-width: 600px) {
         /* Tablet */
+        .blogGrid{
+            display: flex;
+            flex-flow: column;
+        }
     }
 }
   
 /* Landscape, desktop big and small */
 @media (orientation: landscape) {
     /* Small desktops or landscaped tablets */
+    
     @media (max-width: 1370px) {
         /* Big desktops */
+        .blogGrid{
+            display: flex;
+            flex-flow: column;
+        }
     }
 }
   
