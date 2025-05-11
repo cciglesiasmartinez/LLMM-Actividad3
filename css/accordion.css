@@ -73,3 +73,22 @@
 .accordion-caret {
     transition: transform .2s ease-in-out;
 }
+
+@media (orientation: portrait) {
+
+    .accordion-item h2 {
+        font-size: 1.5rem;
+    }
+
+	@media (min-width: 600px) {
+
+	}
+}
+  
+@media (orientation: landscape) {
+
+	@media (max-width: 1370px) {
+
+	}
+}
+  
