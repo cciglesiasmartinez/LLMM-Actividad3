@@ -222,12 +222,14 @@ h2, h1, h3 {
     font-size: 3rem;
 }
 
-.cta > * > .cta-btn {
-    border-radius: 3rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-size: 3rem;
-    padding-bottom: 2rem;
+.cta a {
+    color:grey;
 }
+
+.cta a:visited {
+    color:grey;
+}
+
 /* CTA */
 .cta {
     display: flex;
@@ -256,11 +258,17 @@ h2, h1, h3 {
     width: 100%;
 }
 
+.portada-blog img {
+    object-fit: cover;
+    height: 30vw;
+}
+
 .blogGrid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 1rem;
+    padding-bottom: 4rem;
 }
 
 .header-logo-span a{
@@ -270,15 +278,22 @@ h2, h1, h3 {
 
 .headArti{
     background-color: white;
-    padding: 5px;
+    padding: 2rem;
     margin-top: -15rem;
 }
 .headArti h2{
     text-align: center;
-    margin-bottom: 5px;
+    padding-bottom: 1rem;
+    font-size: 2rem;
 }
+
+.headArti h6 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
 .headArti p{
-    margin-bottom: 5px;
+    padding-bottom: 1rem;
 }
 .headArti a{
     background-color: darkblue;
@@ -292,10 +307,9 @@ h2, h1, h3 {
 }
 
 .article{
-    border: 2px outset red;
-    margin: 50px 20px 10px;
-    padding: 5px;
-    background-color: rgba( 153, 153, 153, 0.3);
+    padding: 1rem;
+    background-color: rgba( 0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 .article h4{
     text-align: center;
@@ -306,7 +320,6 @@ h2, h1, h3 {
     text-decoration: none;
     color: #fff;
     transition: 0.5s;
-    border-radius: 2px;
     padding: 2px;
     margin-top: 25px;
     margin-bottom: 50px;
@@ -319,7 +332,23 @@ h2, h1, h3 {
 }
 
 .article p{
-    margin-bottom: 15px;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.article h6 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.article p {
+    padding-bottom: 1rem;
+}
+
+.article button span {
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
 }
 
 .article2{
@@ -359,21 +388,27 @@ h2, h1, h3 {
 }
 .bottomArti h3{
     text-align: center;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .artiImg {
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
     height: 350px;
     display: block;
-    margin-bottom: 10px;
+    padding-bottom: 1rem;
 }  
 
 .artiImg > img {
-    width:100%;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+.headArti p {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;   
 }
 
 /* Our company */
@@ -401,8 +436,11 @@ h2, h1, h3 {
 .our-company-img {
     padding-bottom: 2rem;
 }
+
 .our-company-img > img {
-    width: 100%;
+    width: 100%;    
+    object-fit: cover;
+    height: 30vw;
 }
 
 /* Our services */
@@ -599,6 +637,38 @@ h2, h1, h3 {
     justify-content: center;
 }
 
+.footer-links ul {
+    list-style-type:square;
+    align-content: left;
+    justify-content: left;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.footer-links li {
+    padding-bottom:0.5rem;
+    font-weight: 300;
+}
+
+.footer-contact p {
+    color: white;
+}
+
+.footer-contact-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-bottom: 1rem !important;
+}
+
+.footer-contact p {
+    padding-bottom: 0.25rem;
+}
+
+
 @media screen and (max-width: 767px) {
     .footer {
         flex-flow: column;
@@ -732,11 +802,13 @@ h2, h1, h3 {
     }
     .left-footer {
         width: 60%;
-        justify-content: center;
+        justify-content: left;
+        padding-bottom: 2rem;
     }
     .right-footer{
         width: 60%;
-        justify-content: center;
+        justify-content: left;
+        padding-bottom: 2rem;
     }
     .left-section {
         display: none;
@@ -750,6 +822,10 @@ h2, h1, h3 {
     .blogGrid{
         display: flex;
         flex-flow: column;
+    }
+
+    .headArti {
+        margin-top: 0;
     }
 
     .carousel {
