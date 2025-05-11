@@ -362,6 +362,20 @@ h2, h1, h3 {
     margin-bottom: 5px;
 }
 
+.artiImg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 350px;
+    display: block;
+    margin-bottom: 10px;
+}  
+
+.artiImg > img {
+    width:100%;
+    height: 100%;
+}
+
 /* Our company */
 .our-company-container {
     display: flex;
