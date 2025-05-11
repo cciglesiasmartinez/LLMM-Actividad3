@@ -637,7 +637,7 @@ h2, h1, h3 {
         padding: 10px 0;
         border: 1px solid #ccc;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        z-index: 100;
+        z-index: 1000;
         flex-direction: column;
         width: 200px;
         align-items: stretch;
@@ -721,3 +721,69 @@ h2, h1, h3 {
 }
 
 
+/* Portrait, mobile and tablet */
+@media (orientation: portrait) {
+    /* Mobile */
+    .footer {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .left-footer {
+        width: 60%;
+        justify-content: center;
+    }
+    .right-footer{
+        width: 60%;
+        justify-content: center;
+    }
+    .left-section {
+        display: none;
+    }
+    .right-section {
+        display: none;
+    }
+    .center-section {
+        width: 100%;
+    }
+    .blogGrid{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .carousel {
+        height: 15rem !important;
+    }
+
+    .slide-over h2 {
+        font-size: 2rem !important;
+    }
+
+    .slide-over span {
+        font-size: 1rem !important;
+    }
+
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+
+    @media (min-width: 600px) {
+        /* Tablet */
+        .blogGrid{
+            display: flex;
+            flex-flow: column;
+        }
+        .carousel {
+            height: 15rem !important;
+        }
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 950px) {
+    /* Tus estilos aquí */
+    .center-section {
+        padding: 0 1rem;
+    }
+}

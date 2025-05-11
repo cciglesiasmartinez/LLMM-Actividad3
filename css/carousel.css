@@ -19,7 +19,7 @@
     left: 0;
     justify-content: space-between;
     width: 100%;
-    z-index: 99999;
+    z-index: 500;
     transition: all ease 0.5s;
 }
 

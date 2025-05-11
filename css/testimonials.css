@@ -82,3 +82,26 @@
 #card hr {
     width: 90%;
 }
+
+@media (orientation: portrait) {
+
+	.card-body {
+		flex-flow: column;
+	}
+
+	.testimonials h2 {
+		font-size: 2rem;
+	}
+
+	@media (min-width: 600px) {
+
+	}
+}
+  
+@media (orientation: landscape) {
+
+	@media (max-width: 1370px) {
+
+	}
+}
+  
