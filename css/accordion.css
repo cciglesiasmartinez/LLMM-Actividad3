@@ -2,17 +2,13 @@
     padding: 0 0;
     margin: 0;
     border-bottom: 1px var(--color-border) dashed;
-    background-color: white;
+    background-color: var(--background-color);
     overflow: hidden;
 }
   
 .accordion-tab-container {
     display: flex;
     flex-flow: row nowrap;
-}
-  
-.accordion-caret-container {
-    /* Left as placeholder */
 }
   
 .accordion-item h2 {
@@ -33,7 +29,7 @@
   
 .accordion-item span {
     display: inline-block;
-    color: var(--color-span);
+    color: var(--foreground-color);
     padding-bottom: 15px;
     padding-right: 5%;
     margin: 0 !important;
@@ -91,4 +87,3 @@
 
 	}
 }
-  
