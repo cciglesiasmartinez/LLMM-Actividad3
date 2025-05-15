@@ -1,6 +1,5 @@
 /* Theme button */
 const themeButton = document.querySelectorAll('.theme-btn')[0];
-console.log(themeButton);
 
 /* The eventListener for click event */
 themeButton.addEventListener('click', () => {
