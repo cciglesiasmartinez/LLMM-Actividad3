@@ -7,42 +7,33 @@ themeButton.addEventListener('click', () => {
     executeThemeModeChanger();
 });
 
-/* Preferred mode detection */
-const darkThemePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
 /* Theme detection preference on page load */
 (() => {
+    const darkThemePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (darkThemePreferred === true && getThemeMode() != "clear") {
-        setCssRootVariables("dark");
-        setLocalStorageThemeMode("dark");
-        changeWebLogo("dark");
+        setTheme("dark");
     } else {
-        setCssRootVariables("clear");
-        setLocalStorageThemeMode("clear");
-        changeWebLogo("clear")
+        setTheme("clear");
     }
 })();
 
+
+/* Main function */
+function executeThemeModeChanger() {
+    const result = getThemeMode();
+    return result == "dark" ? setTheme("clear") : setTheme("dark");
+}
+
+
+/* Helper functions */
 function getThemeMode() {
     return localStorage.getItem('theme') == "clear" ? "clear" : "dark";
 }
 
-async function executeThemeModeChanger() {
-    console.log("Ejecutando thememodechanger")
-    const result = await getThemeMode();
-    console.log(result);
-    if (result == "dark") {
-        console.log("Seteando claro")
-        setCssRootVariables("clear");
-        setLocalStorageThemeMode("clear");
-        changeWebLogo("clear")
-    } 
-    if (result == "clear") {
-        console.log("Seteando oscuro");
-        setCssRootVariables("dark");
-        setLocalStorageThemeMode("dark");
-        changeWebLogo("dark");
-    }
+function setTheme(mode) {
+    setCssRootVariables(mode);
+    setLocalStorageThemeMode(mode);
+    changeWebLogo(mode);
 }
 
 function setLocalStorageThemeMode(mode) {
@@ -66,7 +57,6 @@ function setCssRootVariables(mode) {
 
 function changeWebLogo(mode) {
     const logoElement =  document.querySelectorAll(".header-logo-img")[0];
-    console.log(logoElement);
     if (mode == "dark") {
         logoElement.setAttribute("src", "img/logo-oscuro.png");
     }
