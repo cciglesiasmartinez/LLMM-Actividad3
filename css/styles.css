@@ -126,9 +126,7 @@ h2, h1, h3 {
     flex-flow: row;
     align-items: center;
 }
-.options {
-    width: 20%;
-}
+
 .menu-list {
     display: flex;
     flex-flow: row;
@@ -137,12 +135,45 @@ h2, h1, h3 {
     align-items: center;
     font-size: 1.25rem;
 }
+
 .menu-list > li {
     padding: 0rem 1rem;
 }
+
 .menu-list > li > a {
     color: var(--link-color);
 }
+
+nav li a {
+  position: relative;
+  display: inline-block;
+  color: var(--link-color);
+  text-decoration: none;
+  padding: 0.5rem 0 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+nav li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--highlight-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+nav li a:hover {
+  color: var(--highlight-color);
+}
+
+nav li a:hover::after {
+  transform: scaleX(1);
+}
+
 .header a {
     color: #212529;
     text-decoration: none;
