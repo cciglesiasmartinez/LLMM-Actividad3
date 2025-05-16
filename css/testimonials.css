@@ -87,6 +87,10 @@
 
 @media (orientation: portrait) {
 
+	.card-wrapper {
+		padding-top: 0;
+	}
+
 	#card-name {
 		font-size: 1.5rem;
 	}
