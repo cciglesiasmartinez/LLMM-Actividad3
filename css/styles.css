@@ -518,7 +518,7 @@ body {
     width: 100%;    
     object-fit: cover;
     height: 30vw;
-    border-bottom: 2px var(--foreground-color) solid;
+    /* border-bottom: 2px var(--foreground-color) solid; */
 }
 
 /* Our services */
