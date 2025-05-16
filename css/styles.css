@@ -3,13 +3,13 @@
     /* Theme base colors */
     --background-dark: #212529;
     --foreground-dark: #f8f9fa;
-    --background-clear: #f8f9fa;
-    --foreground-clear: #212529;
-    --highlight-clear: black;
+    --background-light: #f8f9fa;
+    --foreground-light: #212529;
+    --highlight-light: black;
     --highlight-dark: white;
-    --link-clear: black;
+    --link-light: black;
     --link-dark: darkgrey;
-    /* Theme mode (dark/clear), default clear */
+    /* Theme mode (dark/light), default light */
     --background-color: #f8f9fa;
     --foreground-color: #212529;
     --highlight-color: black;

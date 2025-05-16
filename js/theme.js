@@ -9,20 +9,24 @@ themeButton.addEventListener('click', () => {
 /* Theme detection preference on page load */
 (() => {
     const darkThemePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    darkThemePreferred === true && getThemeMode() != "clear" ? setTheme("dark") : setTheme("clear");
+    if (darkThemePreferred === true && getThemeMode() != "light") {
+        setTheme("dark");
+    } else {
+        setTheme("light");
+    }
 })();
 
 
 /* Main function */
 function executeThemeModeChanger() {
     const result = getThemeMode();
-    return result == "dark" ? setTheme("clear") : setTheme("dark");
+    return result == "dark" ? setTheme("light") : setTheme("dark");
 }
 
 
 /* Helper functions */
 function getThemeMode() {
-    return localStorage.getItem('theme') == "clear" ? "clear" : "dark";
+    return localStorage.getItem('theme') == "light" ? "light" : "dark";
 }
 
 function setTheme(mode) {
@@ -48,7 +52,7 @@ function changeWebLogo(mode) {
         if (mode == "dark") {
             logoElement.setAttribute("src", "img/logo-oscuro.png");
         }
-        else if (mode == "clear") {
+        else if (mode == "light") {
             logoElement.setAttribute("src", "img/logo-claro.png");
         }
     }
