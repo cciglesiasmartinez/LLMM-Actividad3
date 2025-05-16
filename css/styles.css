@@ -1,17 +1,19 @@
 /* Theme variables */
 :root {
-    /* Base colors */
-    --dark: #212529;
-    --clear: #f8f9fa;
-    --highlight-dark: black;
-    --highlight-clear: white;
-    --link-dark: black;
-    --link-clear: darkgrey;
-    /* Theme mode (dark/clear) */
+    /* Theme base colors */
+    --background-dark: #212529;
+    --foreground-dark: #f8f9fa;
+    --background-clear: #f8f9fa;
+    --foreground-clear: #212529;
+    --highlight-clear: black;
+    --highlight-dark: white;
+    --link-clear: black;
+    --link-dark: darkgrey;
+    /* Theme mode (dark/clear), default clear */
     --background-color: #f8f9fa;
     --foreground-color: #212529;
     --highlight-color: black;
-    --link-color: var(--link-dark);
+    --link-color: black;
 }
 
 /* Normalizer */

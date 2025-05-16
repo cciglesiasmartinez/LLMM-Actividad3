@@ -1,5 +1,5 @@
 /* Theme button */
-const themeButton = document.querySelectorAll('.theme-btn')[0];
+const themeButton = document.querySelector('.theme-btn');
 
 /* The eventListener for click event */
 themeButton.addEventListener('click', () => {
@@ -9,11 +9,7 @@ themeButton.addEventListener('click', () => {
 /* Theme detection preference on page load */
 (() => {
     const darkThemePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (darkThemePreferred === true && getThemeMode() != "clear") {
-        setTheme("dark");
-    } else {
-        setTheme("clear");
-    }
+    darkThemePreferred === true && getThemeMode() != "clear" ? setTheme("dark") : setTheme("clear");
 })();
 
 
@@ -36,30 +32,24 @@ function setTheme(mode) {
 }
 
 function setLocalStorageThemeMode(mode) {
-    return localStorage.setItem("theme", mode);
+    localStorage.setItem("theme", mode);
 }
 
 function setCssRootVariables(mode) {
-    if (mode == "dark") {
-        document.documentElement.style.setProperty("--background-color", "var(--dark)");
-        document.documentElement.style.setProperty("--foreground-color", "var(--clear)");
-        document.documentElement.style.setProperty("--highlight-color", "var(--highlight-clear)");
-        document.documentElement.style.setProperty("--link-color", "var(--link-clear)");
-    }
-    else if (mode == "clear") {
-        document.documentElement.style.setProperty("--background-color", "var(--clear)");
-        document.documentElement.style.setProperty("--foreground-color", "var(--dark)");
-        document.documentElement.style.setProperty("--highlight-color", "var(--highlight-dark)");
-        document.documentElement.style.setProperty("--link-color", "var(--link-dark)");
-    }
+    document.documentElement.style.setProperty("--background-color", `var(--background-${mode})`);
+    document.documentElement.style.setProperty("--foreground-color", `var(--foreground-${mode})`);
+    document.documentElement.style.setProperty("--highlight-color", `var(--highlight-${mode})`);
+    document.documentElement.style.setProperty("--link-color", `var(--link-${mode})`);
 }
 
 function changeWebLogo(mode) {
-    const logoElement =  document.querySelectorAll(".header-logo-img")[0];
-    if (mode == "dark") {
-        logoElement.setAttribute("src", "img/logo-oscuro.png");
-    }
-    else if (mode == "clear") {
-        logoElement.setAttribute("src", "img/logo-claro.png");
+    const logoElement =  document.querySelector(".header-logo-img");
+    if (logoElement) {
+        if (mode == "dark") {
+            logoElement.setAttribute("src", "img/logo-oscuro.png");
+        }
+        else if (mode == "clear") {
+            logoElement.setAttribute("src", "img/logo-claro.png");
+        }
     }
 }
